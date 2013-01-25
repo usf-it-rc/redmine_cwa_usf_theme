@@ -3,20 +3,33 @@
 /* A1 theme version 1.1.0 by Kirill Bezrukov www.redminecrm.com */
 
 #header {
-    background-color: #f1edbe;
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+    background: transparent;
+    overflow: hidden;
     height: 100px;
+    width: 100%;
+    position: static;
+    padding: 20px 20px 0px 6px;
+}
+
+#wrapper {
+    background: #f1edbe;
+}
+
+#wrapper3 {
+    background: #f1edbe url(../images/banner.jpg) no-repeat center top;
+    overflow: hidden;
     width: 100%;
     position: static;
     /*padding: 14px 8px 0px 6px;*/
 }
 
+
 #header > h1 {
-	background: url(../images/logo.png) no-repeat 10px;
-	padding: 18px 120px;
-	color: #305641;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-	font-size: 40px;
+    background: url(../images/logo.png) no-repeat 36px;
+    padding: 18px 148px;
+    color: #305641;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
     height: 68px;
 }
 
@@ -40,7 +53,7 @@ body, #wrapper {
 	/*background: url(../images/bg-grain.png) repeat 0px 0px #F0F0F0; */
 }
 
-#main { background: transparent; margin: 35px 35px 0px 35px; }
+#main { background: transparent; margin: 0px 35px 0px 35px; }
 
 #top-menu { 
     background: #12825F url("../images/top-bar.jpg") no-repeat left top; 
@@ -95,16 +108,17 @@ div#main.nosidebar div#content {
 
 #sidebar {
 	width: 260px !important;
+        height: 100%;
 	padding: 0px 10px 20px 15px !important;
 	background: whiteSmoke;
 	border: 1px solid #D9D9D9;
-	zoom: 1;
+/*	zoom: 1;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);*/
 }
 
 div#content > h2, 
@@ -213,14 +227,12 @@ div#content > div.wiki {
 
 #main-menu {
     position: relative; 
-    width: 100%; 
+    margin: 0px 35px 0px 35px;
+    left: -6px;
 }
 
 #main-menu ul {
-    width: 100%;
 /*    margin: 0 auto;*/
-    margin: none;
-    padding: none;
     background-color: #006747;
     -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
     -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
@@ -231,34 +243,32 @@ div#content > div.wiki {
     margin: 0 auto;
     padding: 0px 0px 0px 0px;
     vertical-align: middle;
-    width: 16%;
-	height: 36px;
+    width: 20%;
+    height: 36px;
     text-align: center;
 	background: #E0E0E0 url(../images/main-navigation.jpg) repeat-x;
 }
 
 #main-menu li:first-child {
-    width: 14.5%;
     border-left: 0px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-	border-radius: 6px 0 0 0;
-	-moz-border-radius: 6px 0 0 0;
-	-webkit-border-radius: 6px 0 0 0;
-	height: 36px;
+    border-radius: 6px 0 0 0;
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    height: 36px;
 }
 
 #main-menu li:last-child {
-    width: 16.5%;
     border-left: 0px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-	border-radius: 0 6px 0 0;
-	-moz-border-radius: 0 6px 0 0;
-	-webkit-border-radius: 0 6px 0 0;
-	height: 36px;
+    border-radius: 0 6px 0 0;
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    height: 36px;
 }
 
 #main-menu li:first-child a {
@@ -309,11 +319,7 @@ div#content > div.wiki {
 #main-menu li a:hover {background-color:transparent; color: #fff;text-decoration: bold;}
 
 #header {
-	padding-bottom: 50px;
-	/*padding-top: 10px;
-	padding-left: 20px; */
-/*	background-position-y: 11%; */
-    background-color: #f1edbe;
+    padding-bottom: 50px;
     color: #305641;
     margin: 0 auto;
 }
@@ -335,9 +341,9 @@ div#welcome-store-content h4 {
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-	border-radius: 8px;
+/*	border-radius: 8px;
 	-webkit-border-radius: 7px;
-	-moz-border-radius: 8px;
+	-moz-border-radius: 8px;*/
 }
 
 
@@ -389,7 +395,7 @@ table.list thead th {
 }
 
 /*Quick search*/
-#quick-search {	margin-top: 32px; }
+#quick-search {	margin-top: 32px; margin-right: 48px; }
 #quick-search a a:hover a.selected a:visited { color: #0E0E0E; }
 
 /* Grid styles by priorities */
@@ -574,6 +580,7 @@ div.journal .details:hover {
 
 #footer {
 	margin: 10px;
+	background: transparent;
 }
 
 #context-menu, #context-menu ul li ul {
