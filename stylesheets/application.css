@@ -1,67 +1,56 @@
 @import url(../../../stylesheets/application.css);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
 /* A1 theme version 1.1.0 by Kirill Bezrukov www.redminecrm.com */
 
 #header {
     background: #f1edbe url(../images/banner.jpg) no-repeat center top;
-/*    width: 100%; */
+    height: 100%;
     position: static;
- /*   padding: 20px 20px 0px 6px; */
 }
 
 #wrapper {
-/*    background: #f1edbe; */
-      background: #FFFFFF;
+      background: #f1edbe;
 }
 
 #wrapper3 {
-/*    overflow: hidden;*/
     width: 100%;
     position: static;
 }
 
 
 #header > h1 {
-    background: url(../images/banner-logo.png) no-repeat 36px;
-    padding: 10px 148px;
+    background: url(../images/banner-logo.png) no-repeat 48px 18px;
+    padding: 0px 148px;
     color: #305641;
-    /*text-shadow: 1px 1px rgba(0, 0, 0, 0.2); */
     font-size: 0px;
     height: 68px;
-    margin: 5px 0px 21px 87px;
+    margin: 5px 10px 32px 87px;
 }
 
-/*@media only screen and (-webkit-min-device-pixel-ratio: 2), 
-#only screen and (min-device-pixel-ratio: 2) {
-#	#header > h1 {
-#		background-image: url(../images/logo1.png);
-#		background-size: 43px 30px; 
-#	}
-#} */
-
-
 h1, h2, h3, h4 {
-	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+    font-family: "Ubuntu", verdana, arial, helvetica, sans-serif;
 }
 
 body, #wrapper { 
-	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+    font-family: "Ubuntu", verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
 }
 
-#main { background: transparent; margin: 28px 32px 0px 156px; overflow: hidden; }
+#main { background: transparent; margin: -50px 32px 0px 156px; overflow: hidden; }
 
 #top-menu { 
     background: #12825F url("../images/top-bar.jpg") no-repeat left top; 
     background-color: #12825f; 
-    padding: 6px 30px 2px 30px;
-    font-size: 0.9em; 
+    padding: 6px 30px 6px 30px;
+    font-size: 11px; 
     text-transform: uppercase;
-    }
+}
 
 div.flash {
-	border: 0px solid;
-	border: 1px solid;
-	text-shadow: 0 1px white;
+    border: 0px solid;
+    border: 1px solid;
+    text-shadow: 0 1px white;
 }
 
 div#content > div.flash:first-child {
@@ -94,6 +83,7 @@ div.filters h2 .scope_title a {
 
 div#content {
     width: auto;
+    overflow: auto;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -108,18 +98,16 @@ p.other-formats {
 }
 
 #sidebar {
-	width: 260px !important;
-        /*height: 100%;*/
-	padding: 72px 10px 20px 15px !important;
-/*	background: whiteSmoke; /*
-/*	border: 1px solid #D9D9D9;*/
-/*	zoom: 1;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);*/
+	width: 240px !important;
+	padding: 0px 10px 0px 20px !important;
+        margin-left: 15px;
+	background: whiteSmoke; 
+        min-height: 300px;
+	border: 1px solid #D9D9D9;
+	zoom: 1;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
 }
 
 div#content > h2, 
@@ -140,15 +128,9 @@ div#content > #add-document > h2 {
 	-webkit-border-top-right-radius: 6px;
 	-moz-border-radius-topleft: 6px;
 	-moz-border-radius-topright: 6px; 
-	
 	padding: 12px 20px;
 	margin: -6px -10px 10px;
-	
 	letter-spacing: -1px;
-	
-/*	border-top: 1px solid #DADEE5;
-	border-bottom: 1px solid #DADEE5;
-*/
 	color: #444;
 }
 
@@ -229,18 +211,19 @@ div#content > div.wiki {
 #main-menu {
     position: relative;
     width: 128px;
-    margin-top: 64px;
-    /*height: 100%;*/
 }
 
 #main-menu li {
     background-color: #006747;
     vertical-align: middle;
     padding-left: 10px;
-    width: 116px;
+    width: 122px;
     height: 38px;
     display: block;
     background: #E0E0E0 url(../images/main-navigation.jpg) repeat-x;
+    -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
 }
 
 #main-menu li:first-child {
@@ -801,7 +784,7 @@ span.tag:hover {
 
 span.tag a, span.deal-status > span, span.deal-status a {
 	font-weight: bold !important;
-	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif !important; 
+	font-family: "Ubuntu", verdana, arial, helvetica, sans-serif !important; 
 }
 
 span.deal-status a:hover, span.tag a:hover {
