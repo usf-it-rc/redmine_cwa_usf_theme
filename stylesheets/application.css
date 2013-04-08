@@ -19,12 +19,13 @@
 
 
 #header > h1 {
-    background: url(../images/banner-logo.png) no-repeat 48px 18px;
-    padding: 0px 148px;
-    color: #305641;
-    font-size: 0px;
-    height: 68px;
-    margin: 5px 10px 32px 87px;
+/*    background: url(../images/banner-logo.png) no-repeat 48px 18px; */
+    padding: 32px 150px;
+    color: #12825F;
+    font-size: 36px;
+    height: 54px;
+    text-shadow: 0.05em 0.05em 0.1em #000;
+/*    margin: 5px 10px 0px 87px;*/
 }
 
 h1, h2, h3, h4 {
@@ -310,7 +311,6 @@ div#welcome-store-content h4 {
 	-moz-border-radius: 8px;*/
 }
 
-
 a, a:link, a:visited {
 	color: #057b56;;
 }
@@ -361,7 +361,7 @@ table.list thead th {
 }
 
 /*Quick search*/
-#quick-search {	margin-top: 32px; margin-right: 48px; }
+#quick-search {	margin-top: 38px; width:25%; }
 #quick-search a a:hover a.selected a:visited { color: #0E0E0E; }
 
 /* Grid styles by priorities */
@@ -489,6 +489,10 @@ div.message.reply {
 	outline: none;
 	padding: 3px 10px !important;
 	border: 1px solid #C3C3C3;
+}
+
+select#project_quick_jump_box {
+    visibility: hidden;
 }
 
 .box { 
