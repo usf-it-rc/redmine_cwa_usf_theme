@@ -20,10 +20,10 @@
 
 #header > h1 {
 /*    background: url(../images/banner-logo.png) no-repeat 48px 18px; */
-    padding: 32px 150px;
+    padding: 24px 150px;
     color: #12825F;
     font-size: 36px;
-    height: 54px;
+    height: 32px;
     text-shadow: 0.05em 0.05em 0.1em #000;
 /*    margin: 5px 10px 0px 87px;*/
 }
