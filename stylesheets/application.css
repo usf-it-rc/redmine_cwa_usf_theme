@@ -215,10 +215,25 @@ div.filters h2 .scope_title a { color: #222; text-decoration: none; }
 h2, .wiki h1 { color: #222; font-size: 26px;}
 h3, .wiki h2 { color: #222; }
 
+span.author, p.author {
+    font-size: 12px;
+	background-color: #ebebeb; 
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+	border: 1px solid #C3C3C3;
+    max-width: 25%;
+}
+
+span.summary {
+    padding-bottom: 8px;
+}
 
 div#content > div.wiki {
-	padding: 10px;
-	padding-top: 20px;
+/*	padding: 5px; */
 }
 
 #main-menu {
@@ -574,9 +589,9 @@ div.wiki pre, .wiki pre {
 	margin-top: 3px;
 }
 
-div#content > div.wiki {
-	padding-top: 15px;
-}
+/*div#content > div.wiki {
+	/padding-top: 15px;
+}*/
 
 ul.projects.root {
 	padding: 10px;
