@@ -51,7 +51,7 @@ body, #wrapper {
     padding: 4px 8px 2px 8px;
     font-size: 11px; 
     color: #020202;
-    width: 10%;
+    width: 9%;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -61,6 +61,11 @@ body, #wrapper {
 #top-menu a {
     font-weight: normal;
     color: #609A78;
+}
+
+#top-menu ul {
+  padding: 2px 0px 0px 5px;
+  margin: 0px;
 }
 
 #top-menu li {
@@ -338,7 +343,7 @@ table.list thead th {
 }
 
 /*Quick search*/
-#quick-search {	margin-top: 36px; margin-right: 36px; width:25%; }
+#quick-search {	margin-top: 36px; margin-right: 48px; width:25%; }
 #quick-search a a:hover a.selected a:visited { color: #0E0E0E; }
 
 /* Grid styles by priorities */
